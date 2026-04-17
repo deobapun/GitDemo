@@ -9,4 +9,4 @@ def setup(request):
     driver.get(url)
     request.cls.driver=driver #when use request it will use class lavel and we have to use self.driver in the code for avoid error #
     yield
-    driver.close()
+    driver.quit()
